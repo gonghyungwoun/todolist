@@ -1,0 +1,39 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Todo List</h1>
+        <div id="team-modal">
+            <div id="modal-content">
+                <span class="close">&times;</span>
+                <h2>팀 정보 입력</h2>
+                <input type="text" id="team-input" placeholder="팀 이름">
+                <input type="text" id="project-input" placeholder="프로젝트 이름">
+                <button id="save-team-info">저장</button>
+            </div>
+        </div>
+        <div id="sidebar">
+            <h3>팀 정보</h3>
+            <ul id="team-list"></ul>
+            <h3>프로젝트 정보</h3>
+            <ul id="project-list"></ul>
+        </div>
+        <input type="text" id="task-input" placeholder="할 일을 입력하세요">
+        <button id="add-task">추가</button>
+        <input type="text" id="search-input" placeholder="검색하기">
+        <button id="filter-all">모두 보기</button>
+        <button id="filter-completed">완료된 것만 보기</button>
+        <button id="filter-active">미완료된 것만 보기</button>
+        <button id="toggle-theme">테마 변경</button>
+        <ul id="task-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
